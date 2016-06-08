@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-07_02" translatesAutoresizingMaskIntoConstraints="NO" id="GNh-fq-yIS">
+                                <rect key="frame" x="74" y="59" width="52" height="106"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="3bZ-Lr-eWp"/>
+                                    <constraint firstAttribute="height" constant="106" id="uQ9-EJ-B6Q"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-7" translatesAutoresizingMaskIntoConstraints="NO" id="Mra-CT-mME">
+                                <rect key="frame" x="20" y="59" width="55" height="106"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="b0r-Zi-8qe"/>
+                                    <constraint firstAttribute="width" constant="55" id="nAp-SW-tdL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akf-hA-ahk">
+                                <rect key="frame" x="137" y="518" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="NEO-eE-8Eg"/>
+                                    <constraint firstAttribute="height" constant="30" id="U1d-VL-UYj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="animation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kii-UJ-VLV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GNh-fq-yIS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="74" id="1YM-Ar-WfT"/>
+                            <constraint firstItem="GNh-fq-yIS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="9yY-xg-2N3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="akf-hA-ahk" secondAttribute="bottom" constant="20" id="Aif-MV-wQu"/>
+                            <constraint firstItem="Mra-CT-mME" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="BmD-w1-6Gm"/>
+                            <constraint firstItem="Mra-CT-mME" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="Ftu-Tz-o4b"/>
+                            <constraint firstItem="Mra-CT-mME" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="T9U-fV-FxC"/>
+                            <constraint firstItem="GNh-fq-yIS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="VBI-5u-HNU"/>
+                            <constraint firstItem="akf-hA-ahk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XpR-Qq-N76"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="GNh-fq-yIS" id="akt-Q1-zPi"/>
+                        <outlet property="leading1" destination="T9U-fV-FxC" id="Ugb-hD-gnl"/>
+                        <outlet property="leading2" destination="1YM-Ar-WfT" id="5Vh-1N-GcU"/>
+                        <outlet property="widthConstraint" destination="3bZ-Lr-eWp" id="MX5-36-E1Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="circle-07_02" width="344" height="709"/>
+        <image name="circle-7" width="365" height="709"/>
+    </resources>
+</document>
